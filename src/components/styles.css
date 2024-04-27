@@ -259,6 +259,8 @@ h2 {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     width: 300px;
+    margin: auto; /* Center the container horizontally */
+    margin-top: 50px; /* Add some space from the top */
 }
 
 .login-container h2 {
@@ -296,5 +298,5 @@ h2 {
 
 .forgot-password {
     text-align: right;
-    color: white;
+    color: white;
 }

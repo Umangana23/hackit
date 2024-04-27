@@ -30,9 +30,10 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
           {/* Add a route to render nothing for the main content when login page is open */}
-          <Route path="/signup/*" element={<Navigate to="/" />} />
+          <Route path="/login/*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />
       </div>

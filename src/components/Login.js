@@ -1,44 +1,28 @@
 // Login.js
-import React, { useState } from 'react';
-
+import React from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import './styles.css'; // Import your CSS file for styling
 
 const Login = () => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-  const [userType, setUserType] = useState('user');
+    const navigate = useNavigate(); // Initialize the navigate function
 
-  const handleLogin = () => {
-    console.log('Logging in with username:', username);
-  };
+    // Function to navigate to the signup page
+    const goToSignup = () => {
+        navigate('/signup'); // Navigate to the signup page
+    };
 
-  return (
-    <div className="container">
-      <h2>Login</h2>
-      <div className="input-field">
-        <input
-          type="text"
-          placeholder="Username"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-        />
-      </div>
-      <div className="input-field">
-        <input
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-      </div>
-      <div className="input-field">
-        <select value={userType} onChange={(e) => setUserType(e.target.value)}>
-          <option value="user">User</option>
-          <option value="donator">Donator</option>
-        </select>
-      </div>
-      <button className="btn" onClick={handleLogin}>Login</button>
-    </div>
-  );
-};
+    return (
+        <div className="login-container">
+            <h2>Login</h2>
+            <form className="login-form" action="#" method="post">
+                <input type="text" name="username" placeholder="Username" required />
+                <input type="password" name="password" placeholder="Password" required />
+                <input type="submit" value="Login" />
+                {/* Link to the signup page */}
+                <p className="forgot-password"><a href="#" onClick={goToSignup}>Don't Have an account?</a></p>
+            </form>
+        </div>
+    );
+}
 
 export default Login;
