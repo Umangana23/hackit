@@ -1,0 +1,300 @@
+/* styles.css */
+
+/* Header */
+.header {
+    background-color: #1E3D59;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .header-title {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #0F3057;
+    padding: 10px 20px;
+  }
+  
+  .navbar-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .navbar-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar-link:hover {
+    background-color: #1E3D59;
+    border-radius: 5px;
+  }
+  
+  .navbar-btn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar-btn:hover {
+    background-color: #1E3D59;
+    border-radius: 5px;
+  }
+  
+  /* Home */
+  .home {
+    text-align: center;
+  }
+  
+  .slideshow {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .slide-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* About */
+  .about {
+    text-align: center;
+    margin: 50px auto;
+    width: 80%;
+  }
+  
+  .about-heading {
+    color: #0F3057;
+  }
+  
+  .about-description {
+    color: #333;
+    font-size: 1.1rem;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #1E3D59;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-content {
+    margin-bottom: 20px;
+  }
+  
+  .footer-heading {
+    margin-bottom: 10px;
+    color: #0F3057;
+  }
+  
+  .footer-address {
+    color: #ddd;
+  }
+  
+  .footer-copyright {
+    color: #ddd;
+  }
+  
+
+  .vision-details {
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .vision-details h2 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .vision-details p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+  }
+  .footer-container {
+    background-color: rgba(0, 0, 50, 0.8); /* Dark blue background color */
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+
+.social-media {
+    margin-bottom: 20px;
+}
+
+.social-media a {
+    color: white;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.footer-links a {
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    margin-top: 20px;
+}
+
+/* Login.css */
+
+.container {
+  width: 300px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  margin-bottom: 15px;
+}
+
+.input-field input {
+  width: 100%;
+  padding: 15px; /* Increased padding for height */
+  height: 50px; /* Increased height */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-field select {
+  width: 100%;
+  padding: 15px; /* Increased padding for height */
+  height: 50px; /* Increased height */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn {
+  width: 100%;
+  padding: 15px; /* Increased padding for height */
+  height: 50px; /* Increased height */
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+.signup-container {
+    background-color: rgba(0, 0, 50, 0.8); /* Dark blue background color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    margin: auto; /* Center the container horizontally */
+    margin-top: 50px; /* Add some space from the top */
+}
+
+.signup-container h2 {
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.signup-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: navy; /* Dark blue button */
+    color: white;
+    cursor: pointer;
+}
+
+.signup-form input[type="submit"]:hover {
+    background-color: midnightblue; /* Darker shade on hover */
+}
+
+.login-container {
+    background-color: rgba(0, 0, 255, 0.5); /* Adjust the opacity and color as needed */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 300px;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.login-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: royalblue;
+    color: white;
+    cursor: pointer;
+}
+
+.login-form input[type="submit"]:hover {
+    background-color: navy;
+}
+
+.forgot-password {
+    text-align: right;
+    color: white;
+}
